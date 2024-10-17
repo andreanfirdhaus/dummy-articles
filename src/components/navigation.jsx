@@ -3,14 +3,14 @@ import { NavLink } from 'react-router-dom';
 export default function Navigation() {
     return (
         <header>
-            <nav className='flex justify-center bg-zinc-800 max-w-[19rem] mx-auto p-5 my-6 rounded-full'>
-                <ul className='flex justify-center space-x-8 [&_li]:text-white [&_li]:text-base'>
+            <nav className='flex justify-center bg-zinc-800 max-w-[16rem] mx-auto p-5 my-6 rounded-full'>
+                <ul className='flex justify-center space-x-6 [&_li]:text-white [&_li]:text-base'>
                     <li>
                         <NavLink
                             to='/'
                             className={({ isActive }) =>
                                 isActive
-                                    ? 'bg-zinc-700 p-3 px-4 rounded-full transition duration-300 ease-in-out'
+                                    ? 'text-blue-400 ounded-full transition duration-300 ease-in-out'
                                     : ''
                             }
                         >
@@ -22,7 +22,7 @@ export default function Navigation() {
                             to='/articles'
                             className={({ isActive }) =>
                                 isActive
-                                    ? 'bg-zinc-700 p-3 px-4 rounded-full transition duration-300 ease-in-out'
+                                    ? 'text-blue-400 ounded-full transition duration-300 ease-in-out'
                                     : ''
                             }
                         >
@@ -34,7 +34,7 @@ export default function Navigation() {
                             to='/about'
                             className={({ isActive }) =>
                                 isActive
-                                    ? 'bg-zinc-700 p-3 px-4 rounded-full transition duration-300 ease-in-out'
+                                    ? 'text-blue-400 ounded-full transition duration-300 ease-in-out'
                                     : ''
                             }
                         >
